@@ -8,11 +8,11 @@ Practicing the Go programming language.
 
 # Table of Contents
 * [Description](#description)
-* Contents
-* Set Up
-* Usage
-* Input File
-* Documentation
+* [Contents](#contents)
+* [Set Up](#set-up)
+* [Usage](#usage)
+* [Input File](#input-file)
+* [Documentation](#documentation)
 
 # Description
 This program performs several algorithms tailored toward graphs, such as 
@@ -29,20 +29,25 @@ Transitive Closure - For every possible path from every vertex to
 another vertex, make an edge between them.
 Cycle Search - Detects a cycle in the graph.
 
-# CONTENTS
-* graph  : A folder containing the graph source file.
-* graph/Graph.go : This file models a graph and performs various
-algorithms on it.
+# Contents
+* graph
+  * A folder containing the graph source file.
+* graph/Graph.go
+  * This file models a graph and performs various algorithms on it.
 
-* vertex : A folder containing the vertex source file.
-* vertex/Vertex.go : This file models a simple vertex contained in a graph.
+* vertex
+  * A folder containing the vertex source file.
+* vertex/Vertex.go
+  * This file models a simple vertex contained in a graph.
 
-* main : A folder containing the driver source file.
-* main/Driver.go : The main driver of the program. Reads in command line
-arguments, which accepts a file and forms a graph on it. 
-* main/assign.txt : An example format of how a graph is represented.
+* main
+  * A folder containing the driver source file.
+* main/Driver.go
+  * The main driver of the program. Reads in command line arguments, which accepts a file and forms a graph on it. 
+* main/assign.txt
+  * An example format of how a graph is represented.
 
-# SET UP
+# Set Up
 
 To run the program, we need to have GO installed and setup on the computer.
 The setup needs to include a GOPATH, and in the GOATH, we should have 
@@ -50,7 +55,7 @@ three folders: src, pkg, and bin. Ensure the directory 'KF_Project2_DFS'
 is in the src folder. 
 
 
-# USAGE
+# Usage
 To run the program, Use the terminal to navigate to 'KF_Project2_DFS/main' 
 directory and run the following command in the terminal:
 
@@ -61,10 +66,10 @@ a source and a destination.
 
 NOTE://
 Not required, but we can create an executable file by going into the 
-'KF_Project2_DFS/main' directory and typing: 'go build -o dfs' 
+'KF_Project2_DFS/main' directory and typing: `go build -o dfs`
 Then we can just run:
-dfs <input_file>
-or ./dfs <input_file>
+`dfs <input_file>`
+or `./dfs <input_file>`
 We can also place this file into the $GOPATH/bin directory to run it from
 anywhere on the system, assuming the path environment variables
 are properly set up. 
